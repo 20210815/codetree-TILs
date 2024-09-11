@@ -1,10 +1,13 @@
 n = int(input())
 
-cnt = 0
+cnt = ord('A')
 
 for i in range(n):
     for j in range(i):
-        print(" ", end="")
+        print(" ", end=" ")
     for k in range(n-i):
-        print("2", end=" ")
+        print(chr(cnt), end=" ")
+        cnt += 1
+        if cnt > ord('Z'):
+            cnt = ord('A')
     print()
