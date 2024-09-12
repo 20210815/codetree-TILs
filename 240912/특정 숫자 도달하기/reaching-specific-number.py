@@ -1,10 +1,10 @@
 arr = list(map(int, input().split()))
 
-sum = 0
-for i in range(len(arr)+1):
+new_arr=[0] * len(arr)
+for i in range(len(arr)):
     if arr[i] < 250:
-        sum += arr[i]
+        new_arr[i] = arr[i]
     else:
         break
 
-print("%d %.1f" %(sum, sum/(i)))
+print("%d %.1f" %(sum(new_arr), sum(new_arr)/len(new_arr)))
