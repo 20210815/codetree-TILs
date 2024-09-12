@@ -1,9 +1,9 @@
 arr = list(map(int, input().split()))
 
-new_arr=[0] * len(arr)
+new_arr=[]
 for i in range(len(arr)):
     if arr[i] < 250:
-        new_arr[i] = arr[i]
+        new_arr.append(arr[i])
     else:
         break
 
