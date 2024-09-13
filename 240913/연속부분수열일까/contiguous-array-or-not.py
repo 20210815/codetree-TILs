@@ -12,22 +12,11 @@ b = list(map(int, input().split()))
 # 9 2 4 1 3 3 1 4 6 8
 # 4 1 3 1 3 1 4
 
-cnt = 1
-if b[0] in a:
-    for i in range(a.index(b[0])+1, len(a)):
-        if a[i] == b[cnt]:
-            if len(b)-1 ==  cnt:
-                print("Yes")
-                break
-            else:
-                cnt += 1
-                continue
-        else:
-            if b[0] in a[i:]:
-                a[i:].index(b[0])
-            else:
-                print("No")
-                break
-    
-else: 
-    print("No")
+for i in range(len(b)):
+    if b[i] not in a:
+        print("No")
+    for j in range(len(a)):
+        if b[i] == a[j]:
+            i += 1
+if i == len(b):
+    print("Yes")
