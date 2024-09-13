@@ -23,8 +23,8 @@ if b[0] in a:
                 cnt += 1
                 continue
         else:
-            if b[0] in a[i:]:
-                a[i:].index(b[0])
+            if b[1] in a[i+1:]:
+                a[i+1:].index(b[1])
             else:
                 print("No")
                 break
