@@ -12,3 +12,5 @@ if b[0] in a:
         elif i-ind == len(b)-1:
             print("Yes")
             break
+else:
+    print("No")
