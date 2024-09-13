@@ -18,5 +18,10 @@ for i in range(len(b)):
     for j in range(len(a)):
         if b[i] == a[j]:
             i += 1
+        else:
+            break
+    if j != len(b):
+        print("No")
+        break
 if i == len(b):
     print("Yes")
