@@ -20,3 +20,4 @@ for i in range(nq[1]):
     else:
         for k in range(que[1]-1, que[2]):
             print(arr[k], end=" ")
+        print()
