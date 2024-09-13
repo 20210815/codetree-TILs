@@ -14,4 +14,4 @@ if len(in_list) != 0:
         for j in range(1, len(in_list)):
             if max_val < in_list[j]:
                 max_val = in_list[j]
-            print(max_val)
+        print(max_val)
