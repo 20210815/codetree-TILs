@@ -9,6 +9,7 @@ while True:
         for i in range(n):
             if max_val == arr[i]:
                 if i == n-1 :
+                    print(max_index+1, end=" ")
                     break
                 else:
                     pass
