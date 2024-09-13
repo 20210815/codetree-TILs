@@ -20,7 +20,6 @@ if b[0] in a:
                 print("Yes")
                 break
             else:
-                cnt += 1
                 continue
         else:
             if b[1] in a[i+1:]:
