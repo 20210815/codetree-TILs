@@ -9,6 +9,6 @@ if b[0] in a:
         if a[i] != b[i-ind]:
             print("No")
             break
-        if i-ind == len(b)-1:
+        elif i-ind == len(b)-1:
             print("Yes")
             break
