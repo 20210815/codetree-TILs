@@ -10,7 +10,7 @@ while True:
     for i in range(n):    
         if max_val == arr[i] and max_ind == i:
             pass
-        elif max_val == arr[i] and i == n-1:
+        elif max_val == arr[i] and i > max_ind:
             print(max_ind+1, end=" ")
         elif max_val < arr[i]:
             max_val = arr[i]
