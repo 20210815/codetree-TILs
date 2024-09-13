@@ -1,26 +1,21 @@
 n = int(input())
 
-arr = list(map(int, input().split()))
+arr = list(map(int,input().split()))
 
-max_index = 0
-max_val = arr[0]
-
+# 최댓값의 위치 구하기
+# 그 중 제일 왼쪽
 while True:
-        for i in range(n):
-            if max_val == arr[i]:
-                if i == n-1 :
-                    print(max_index+1, end=" ")
-                    break
-                else:
-                    pass
-            elif max_val < arr[i]:
-                max_val = arr[i]
-                max_index = i
-                arr[i] = 0
-                print(max_index+1, end=" ")
-                if max_index +1 == 1 :
-                    break
-        if max_index +1 == 1:
-            break
-        max_val = 0
-        max_index = 0
+    max_val = arr[0]
+    max_ind = 0
+    for i in range(n):    
+        if max_val == arr[i] and max_ind == i:
+            pass
+        elif max_val == arr[i] and i == n-1:
+            print(max_ind+1, end=" ")
+        elif max_val < arr[i]:
+            max_val = arr[i]
+            max_ind = i
+            print(max_ind+1, end=" ")
+            arr[i] = 0
+    if max_ind == 0:
+        break
