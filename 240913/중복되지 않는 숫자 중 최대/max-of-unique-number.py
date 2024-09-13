@@ -9,10 +9,10 @@ for i in range(n):
     else:
         if i == n-1 and len(in_list) == 0:
             print(-1)
+        elif i == n-1:
+            max_val = in_list[0]
+            for j in range(1, len(in_list)):
+                if max_val < in_list[j]:
+                    max_val = in_list[j]
 
-max_val = in_list[0]
-for j in range(1, len(in_list)):
-    if max_val < in_list[j]:
-        max_val = in_list[j]
-
-print(max_val)
+            print(max_val)
