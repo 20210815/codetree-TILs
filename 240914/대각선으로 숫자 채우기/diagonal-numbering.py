@@ -31,7 +31,7 @@ else:
             else:
                 arr[j][i-j] = cnt
                 cnt += 1
-                print(f"{i}({j}, {i-j})")
+                #print(f"{i}({j}, {i-j})")
 
 for i in range(n[0]):
     for j in range(n[1]):
