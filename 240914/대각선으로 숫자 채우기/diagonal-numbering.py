@@ -14,7 +14,7 @@ if n[0] == 1 or n[1] == 1:
         for j in range(n[0]):
             if i - j < 0:
                 continue
-            elif i - j == n[1]:
+            elif i - j >= n[1]:
                 continue
             else:
                 arr[j][i-j] = cnt
