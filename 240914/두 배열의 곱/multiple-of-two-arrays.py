@@ -1,7 +1,9 @@
 arr = [0] * 3
 for i in range(3):
     arr[i] = list(map(int, input().split()))
-a = input()
+
+input()
+
 brr = [0] * 3
 for i in range(3):
     brr[i] = list(map(int, input().split()))
