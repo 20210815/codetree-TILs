@@ -17,4 +17,4 @@ sum = 0
 for i in range(2):
     for j in range(4):
         sum += arr[i][j]
-print(sum/8, end=" ")
+print("%.lf" %(sum/8), end=" ")
