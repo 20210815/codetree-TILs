@@ -11,8 +11,10 @@ y = 0
 for i in range(len(n)): #몇 번인지
     if n[i] == 'L':
         r += 1
+        r %= 4
     elif n[i] == 'R':
         r -= 1
+        r %= 4
     elif n[i] == 'F':
         if r == 1:
             y += 1
