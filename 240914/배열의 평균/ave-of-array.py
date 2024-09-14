@@ -13,8 +13,6 @@ for i in range(4):
     print((a+b)/2, end=" ")
 print()
 
-sum = 0
-for i in range(2):
-    for j in range(4):
-        sum += arr[i][j]
-print("%.lf" %(sum/8), end=" ")
+a = sum(arr[0])
+b = sum(arr[1])
+print("%.1f" %((a+b)/8), end=" ")
