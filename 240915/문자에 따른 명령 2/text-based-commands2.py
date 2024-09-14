@@ -21,9 +21,9 @@ for i in range(len(n)): #몇 번인지
             r -= 1
     elif n[i] == 'F':
         if r == 1:
-            y += 1
-        elif r == 2:
             x += 1
+        elif r == 2:
+            y += 1
         elif r == 3:
             x -= 1
         elif r == 4:
