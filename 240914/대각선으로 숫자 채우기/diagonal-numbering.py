@@ -22,7 +22,7 @@ if n[0] == 1 or n[1] == 1:
                 #print(f"{i}({j}, {i-j})")
 else:
     for i in range((n[0]-1)*(n[1]-1)+1):
-        print(i)
+        #print(i)
         for j in range(n[0]):
             if i - j < 0:
                 continue
