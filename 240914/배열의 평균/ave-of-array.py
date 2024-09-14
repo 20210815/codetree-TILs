@@ -13,6 +13,8 @@ for i in range(4):
     print((a+b)/2, end=" ")
 print()
 
-a = sum(arr[0])
-b = sum(arr[1])
-print((a+b)/8, end=" ")
+sum = 0
+for i in range(2):
+    for j in range(4):
+        sum += arr[i][j]
+print(sum/8, end=" ")
