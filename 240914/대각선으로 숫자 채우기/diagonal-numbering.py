@@ -21,12 +21,12 @@ if n[0] == 1 or n[1] == 1:
                 cnt += 1
                 #print(f"{i}({j}, {i-j})")
 else:
-    for i in range((n[0]-1)*(n[1]-1)+1):
+    for i in range((n[0]-1)*(n[1]-1)+2):
         #print(i)
         for j in range(n[0]):
             if i - j < 0:
                 continue
-            elif i - j == n[1]:
+            elif i - j >= n[1]:
                 continue
             else:
                 arr[j][i-j] = cnt
