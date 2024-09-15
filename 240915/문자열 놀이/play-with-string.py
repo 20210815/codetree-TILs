@@ -12,8 +12,8 @@ for i in range(q):
         for i in string:
             print(i, end="")
     elif int(que[0]) == 2:
-        for i in string:
-            if i == que[1]:
-                i = que[2]
-            print(i, end="")
+        for i in range(len(string)):
+            if string[i] == que[1]:
+                string[i] = que[2]
+            print(string[i], end="")
     print()
