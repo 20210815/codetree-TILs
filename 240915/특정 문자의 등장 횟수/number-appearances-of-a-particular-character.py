@@ -1,7 +1,11 @@
 n = input()
 
-if 'ee' in n:
-    print(n.count('ee'), end=" ")
+cnt = 0
+cnt1 = 0
 
-if 'eb' in n:
-    print(n.count('eb'), end=" ")
+for i in range(len(n)):
+    if n[i:i+2] == 'ee':
+        cnt += 1
+    if n[i:i+2] == 'eb':
+        cnt1 += 1
+print(cnt, cnt1)
