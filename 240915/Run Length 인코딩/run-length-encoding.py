@@ -13,6 +13,8 @@ for i in range(len(string)-1): #aaabbbbcbb
         li.append([ch,cnt])
         ch = string[i+1]
         cnt = 1
+        if i+1 == len(string)-1:
+            li.append([ch, cnt])
 
 print(len(li)*2)
 for i in range(len(li)):
