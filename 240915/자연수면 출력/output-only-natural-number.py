@@ -1,4 +1,7 @@
 arr = list(map(int, input().split()))
 
-for i in range(arr[1]):
-    print(arr[0], end="")
+if arr[0] < 0:
+    print("0")
+else:
+    for i in range(arr[1]):
+        print(arr[0], end="")
