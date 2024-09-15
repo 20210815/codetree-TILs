@@ -1,6 +1,6 @@
 arr = list(map(int, input().split()))
 
-if arr[0] < 0:
+if arr[0] <= 0:
     print("0")
 else:
     for i in range(arr[1]):
