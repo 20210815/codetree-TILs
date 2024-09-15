@@ -1,4 +1,8 @@
 string = input()
 n = int(input())
 
-print(string[0:11:-1])
+cnt = 0
+for i in range(len(string)-1, -1, -1):
+    if cnt < 11:
+        print(string[i], end="")
+        cnt += 1
