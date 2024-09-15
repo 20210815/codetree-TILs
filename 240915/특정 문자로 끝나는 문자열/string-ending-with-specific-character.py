@@ -1,10 +1,9 @@
-string = []
+string = [''] * 10
 
-while True:
-    s = input()
-    string.append(s)
-    if len(s) == 1:
-        break
+for i in range(10):
+    string[i] = input()
+
+s = input()
 
 cnt = 0
 for i in range(len(string)-1):
