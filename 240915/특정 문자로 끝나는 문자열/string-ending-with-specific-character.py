@@ -6,7 +6,7 @@ for i in range(10):
 s = input()
 
 cnt = 0
-for i in range(len(string)-1):
+for i in range(len(string)):
     if s == string[i][len(string[i])-1]:
         cnt += 1 
         print(string[i])
