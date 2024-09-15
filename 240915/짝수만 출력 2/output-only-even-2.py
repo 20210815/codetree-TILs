@@ -1,5 +1,5 @@
 arr = list(map(int, input().split()))
 
-while a <= b:
-    print(b, end=" ")
-    b += 2
+while arr[1] <= arr[0]:
+    print(arr[0], end=" ")
+    arr[0] -= 2
