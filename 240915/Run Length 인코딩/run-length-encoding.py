@@ -20,7 +20,7 @@ else:
             if i == len(string)-2:
                 li.append([ch, cnt])
 
-print(len(li)*2)
-for i in range(len(li)):
-    for j in range(2):
-        print(li[i][j],end="")
+    print(len(li)*2)
+    for i in range(len(li)):
+        for j in range(2):
+            print(li[i][j],end="")
