@@ -6,6 +6,33 @@ def check_3(a, b):
     return cnt
 
 def check_369(i):
+    if i > 1000000:
+        if i // 1000000 == 3 or i // 1000000 == 6 or i // 1000000 == 9:
+            return True
+        else:
+            i %= 1000000
+
+
+    if i > 100000:
+        if i // 100000 == 3 or i // 100000 == 6 or i // 100000 == 9:
+            return True
+        else:
+            i %= 100000
+
+    
+    if i > 10000:
+        if i // 10000 == 3 or i // 10000 == 6 or i // 10000 == 9:
+            return True
+        else:
+            i %= 10000
+
+
+    if i > 1000:
+        if i // 1000 == 3 or i // 1000 == 6 or i // 1000 == 9:
+            return True
+        else:
+            i %= 1000
+
     if i > 100:
         if i // 100 == 3 or i // 100 == 6 or i // 100 == 9:
             return True
