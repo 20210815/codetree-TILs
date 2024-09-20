@@ -13,7 +13,7 @@ def check_list(a_list, b_list, a, b):
                     if b_list[i] == a_list[j]:
                         i += 1
                         j += 1
-                        if i == a:
+                        if i == b:
                             return "Yes"
                     else:
                         return "No"
