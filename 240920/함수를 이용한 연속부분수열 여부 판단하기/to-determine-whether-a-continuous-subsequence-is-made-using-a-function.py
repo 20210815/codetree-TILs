@@ -18,7 +18,7 @@ def check_list(a_list, b_list, a, b):
                         if i == b:
                             return "Yes"
                     else:
-                        if a_list[j:] in b_list[i]:
+                        if a_list.count([b_list[i]]):
                             i += 1
                             j += 1
                             break
