@@ -9,7 +9,7 @@ def date_exists(y, m, d):
         elif m == 8:
             if d > 31:
                 return -1
-        elif m % 2 == 0:
+        elif m == 4 or m == 6 or m == 9 or m == 11:
             if d > 30:
                 return -1
         else:
