@@ -11,9 +11,12 @@ def check_list(a_list, b_list, a, b):
                     if i > a or j > b:
                         return "No"
                     if b_list[i] == a_list[j]:
+                        i += 1
+                        j += 1
                         return "Yes"
                     else:
                         return "No"
                     
+
 
 print(check_list(a_list, b_list, a, b))
