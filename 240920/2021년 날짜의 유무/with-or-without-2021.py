@@ -2,7 +2,7 @@ m, d = tuple(map(int, input().split()))
 
 def check_date(m, d):
     if m > 12 or d > 31:
-        return False
+        return "No"
     else:
         if m % 2 == 0:
             if m == 2:
