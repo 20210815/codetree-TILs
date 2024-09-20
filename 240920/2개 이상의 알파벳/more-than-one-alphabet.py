@@ -6,5 +6,4 @@ def check_string(n):
 
 
 a = set(input())
-print(a)
 check_string(a)
