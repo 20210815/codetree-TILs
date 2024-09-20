@@ -1,7 +1,4 @@
 def date_exists(y, m, d):
-    if d > 31:
-        return -1
-    else:
         if m == 2:
             if four_years(y):
                 if d > 29:
