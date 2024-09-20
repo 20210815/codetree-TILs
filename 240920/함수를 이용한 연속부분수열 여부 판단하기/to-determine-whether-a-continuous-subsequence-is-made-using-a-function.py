@@ -8,12 +8,13 @@ def check_list(a_list, b_list, a, b):
         for j in range(a):
             if b_list[i] == a_list[j]:
                 while True:
-                    if i > a or j > b:
+                    if i > b or j > a:
                         return "No"
                     if b_list[i] == a_list[j]:
                         i += 1
                         j += 1
-                        return "Yes"
+                        if i == a:
+                            return "Yes"
                     else:
                         return "No"
                     
