@@ -29,13 +29,8 @@ def weather(m):
     
 
 def four_years(y):
-    if y % 4 == 0:
-        if y % 100 == 0 and y % 400 == 0:
+    if (y % 4 == 0 and y % 100 != 0) or (y % 400 == 0):
             return True
-        elif y % 100 != 0:
-            return True
-        else:
-            return False
     else:
         return False
 
