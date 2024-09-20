@@ -1,5 +1,5 @@
 def date_exists(y, m, d):
-    if m > 12 or d > 31:
+    if d > 31:
         return -1
     else:
         if m == 2:
