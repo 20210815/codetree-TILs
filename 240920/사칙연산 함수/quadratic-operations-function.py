@@ -2,7 +2,7 @@ def plus(a, c):
     return a + c
 
 def minus(a, c):
-    return c - a
+    return a- c
 
 def multi(a, c):
     return a * c
