@@ -5,5 +5,6 @@ def check_string(n):
         print("No")
 
 
-a = tuple(input())
+a = set(input())
+print(a)
 check_string(a)
