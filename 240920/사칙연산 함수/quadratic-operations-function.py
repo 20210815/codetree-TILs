@@ -14,16 +14,12 @@ a, o, c = list(map(str, input().split()))
 
 result = 0
 if o == '+':
-    result = plus(int(a), int(c))
-    print(f"{a} {o} {c} = {result}")
+    print(f"{a} {o} {c} = {plus(int(a), int(c))}")
 elif o == '-':
-    result = minus(int(a), int(c))
-    print(f"{a} {o} {c} = {result}")
+    print(f"{a} {o} {c} = {minus(int(a), int(c))}")
 elif o == '*':
-    result = multi(int(a),int(c))
-    print(f"{a} {o} {c} = {result}")
+    print(f"{a} {o} {c} = {multi(int(a),int(c))}")
 elif o == '/':
-    result = divi(int(a), int(c))
-    print(f"{a} {o} {c} = {result}")
+    print(f"{a} {o} {c} = {divi(int(a), int(c))}")
 else:
     print("False")
