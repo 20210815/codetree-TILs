@@ -8,7 +8,7 @@ def multi(a, c):
     return a * c
 
 def divi(a, c):
-    return c // a
+    return a // c
 
 a, o, c = list(map(str, input().split()))
 
