@@ -18,7 +18,11 @@ def check_list(a_list, b_list, a, b):
                         if i == b:
                             return "Yes"
                     else:
-                        return "No"
+                        if a_list[j:] in b_list[i]:
+                            i += 1
+                            j += 1
+                        else:
+                            return "No"
                     
 
 
