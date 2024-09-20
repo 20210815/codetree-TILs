@@ -6,6 +6,9 @@ def date_exists(y, m, d):
             if four_years(y):
                 if d > 29:
                     return -1
+            else:
+                if d > 28:
+                    return -1
         elif m == 8:
             if d > 31:
                 return -1
