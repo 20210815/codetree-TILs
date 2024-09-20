@@ -4,6 +4,8 @@ a_list = list(map(int, input().split()))
 b_list = list(map(int, input().split()))
 
 def check_list(a_list, b_list, a, b):
+    if a < b:
+        return "No"
     for i in range(b):
         for j in range(a):
             if b_list[i] == a_list[j]:
