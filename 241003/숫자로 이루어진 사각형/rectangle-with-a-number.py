@@ -5,7 +5,7 @@ arr = [[_ for _ in range(n)] for _ in range(n)]
 def make_square(n):
     for i in range(n):
         for j in range(n):
-            if i * n + j + 1 <= 9:
+            if i * n + j + 1 <= (n*2+1):
                 arr[i][j] = i * n + j + 1
             else:
                 arr[i][j] = i * n + j + 1 - 9
