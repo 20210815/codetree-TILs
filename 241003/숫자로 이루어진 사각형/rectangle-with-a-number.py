@@ -2,13 +2,19 @@ n = int(input())
 
 arr = [[_ for _ in range(n)] for _ in range(n)]
 
+
+num = 1
 def make_square(n):
+    global num
     for i in range(n):
         for j in range(n):
-            if i * n + j + 1 <= (n*2+1):
-                arr[i][j] = i * n + j + 1
+            if num == 10:
+                num = 1
+                arr[i][j] = num
             else:
-                arr[i][j] = i * n + j + 1 - 9
+                arr[i][j] = num
+                num += 1
+                
     print_arr(n)
 
 def print_arr(n):
