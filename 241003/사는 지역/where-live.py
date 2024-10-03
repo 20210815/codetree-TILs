@@ -5,18 +5,15 @@ class Ur:
         self.city = city
 
 n = int(input())
-name_list = [''] * n
-user = [Ur() for _ in range(n)]
+arr = [tuple(input().split()) for _ in range(n)]
+people = [Ur(name, addr, city) for name, addr, city in arr]
 
-for i in range(n):
-    name, addr, city = tuple(map(str, input().split()))
-    user[i] = Ur(name, addr, city)
-    name_list[i] = name
+target_idx = 0
+for i, person in enumerate(people):
+    if person.name > people[target_idx].name:
+        target_idx = i
 
-name_list.sort(reverse=True)
 
-for i in range(n):
-    if user[i].name == name_list[0]:
-        print(f'name {user[i].name}')
-        print(f'addr {user[i].addr}')
-        print(f'city {user[i].city}')
+print(f'name {people[target_idx].name}')
+print(f'addr {people[target_idx].addr}')
+print(f'city {people[target_idx].city}')
