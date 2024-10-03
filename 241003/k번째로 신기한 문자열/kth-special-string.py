@@ -4,7 +4,7 @@ stri = []
 
 for i in range(int(n)):
     s = input()
-    if s[:2] == T:
+    if s[:len(T)] == T:
         stri.append(s)
 
 stri.sort()
