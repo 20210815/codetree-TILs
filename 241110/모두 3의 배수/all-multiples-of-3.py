@@ -6,6 +6,3 @@ for i in range(5):
     else:
         if i == 4:
             print(1)
-        else:
-            print(0)
-            break
