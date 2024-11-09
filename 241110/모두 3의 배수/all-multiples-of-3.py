@@ -5,3 +5,5 @@ for i in range(5):
     else:
         if i == 5:
             print(1)
+        else:
+            print(0)
