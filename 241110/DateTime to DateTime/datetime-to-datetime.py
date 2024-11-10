@@ -9,9 +9,10 @@ def calculateTime(d, h, m):
     return result
 
 
-if day < 11 and hour < 11 and minute < 11:
-    print(-1)
-elif day == 11 and hour < 11 and minute <11:
+if day == 11:
+    if hour < 11:
+        print(-1)
+elif hour == 11 and minute < 11:
     print(-1)
 else:
     time1 = calculateTime(11, 11, 11)
