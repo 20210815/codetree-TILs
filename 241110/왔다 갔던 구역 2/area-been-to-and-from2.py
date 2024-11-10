@@ -1,11 +1,11 @@
 n = int(input())
 
-arr = [0] * 40
-now = 20
-arr[now]+=1
+arr = [0] * 200
+now = 100
 
 for i in range(n):
     x, W = tuple(map(str, input().split()))
+    arr[now] += 1
     if W == "R":
         for j in range(int(x)):
             now += 1
@@ -23,4 +23,4 @@ for i in range(len(arr)):
     if arr[i] >= 2:
         result += 1
 
-print(result)
+print(result-1)
