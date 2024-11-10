@@ -16,7 +16,7 @@ date1 = calculateDate(m1, d1)
 date2 = calculateDate(m2, d2)
 term = date2-date1
 
-if term % 7 == week.index(day):
+if term % 7 >= week.index(day):
     print(term // 7 + 1)
 elif day == "Mon":
     print(term // 7 + 1)
