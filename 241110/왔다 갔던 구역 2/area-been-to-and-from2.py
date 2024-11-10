@@ -1,7 +1,7 @@
 n = int(input())
 
-arr = [0] * 101
-now = 50
+arr = [0] * 201
+now = 100
 
 for i in range(n):
     x, W = tuple(map(str, input().split()))
