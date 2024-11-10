@@ -1,18 +1,20 @@
 n = int(input())
 
-arr = [0] * 201
-now = 100
+arr = [0] * 40
+now = 20
 
 for i in range(n):
     x, W = tuple(map(str, input().split()))
     if W == "R":
         for j in range(int(x)+1):
-            now += j
+            now += 1
             arr[now] += 1 
     else:
         for k in range(int(x)+1):
-            now -= k
+            now -= 1
             arr[now] += 1
+
+print(arr)
 
 result = 0
 for i in range(len(arr)):
