@@ -15,4 +15,4 @@ def calculateDate(m, d):
 date1 = calculateDate(m1, d1)
 date2 = calculateDate(m2, d2)
 
-print((date2-date1)//7+1)
+print((date2-date1+1)//7)
