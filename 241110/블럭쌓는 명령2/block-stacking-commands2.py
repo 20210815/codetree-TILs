@@ -6,7 +6,7 @@ arr = [0] * (N + 1)
 
 for i in range(K):
     s, e = tuple(map(int, input().split()))
-    for j in range(s, e):
-        arr[s] += 1
+    for j in range(s, e+1):
+        arr[j] += 1
 
-print(arr.index(max(arr))+1)
+print((max(arr)))
