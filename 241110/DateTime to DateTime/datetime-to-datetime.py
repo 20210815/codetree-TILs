@@ -12,8 +12,13 @@ def calculateTime(d, h, m):
 if day == 11:
     if hour < 11:
         print(-1)
-elif hour == 11 and minute < 11:
-    print(-1)
+    elif hour == 11:
+        if minute < 11:
+            print(-1)
+        else:
+            time1 = calculateTime(11, 11, 11)
+            time2 = calculateTime(day, hour, minute)
+            print(time2-time1)
 else:
     time1 = calculateTime(11, 11, 11)
     time2 = calculateTime(day, hour, minute)
