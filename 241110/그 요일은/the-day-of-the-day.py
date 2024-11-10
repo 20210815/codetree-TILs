@@ -18,5 +18,7 @@ term = date2-date1
 
 if term % 7 == week.index(day):
     print(term // 7 + 1)
+elif day == "Mon":
+    print(term // 7 + 1)
 else:
     print(term // 7)
