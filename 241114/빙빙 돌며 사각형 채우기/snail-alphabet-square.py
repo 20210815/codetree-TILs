@@ -14,7 +14,7 @@ def inRange(x1, y1):
 dir = 0
 x, y = 0, 0
 for i in range(0, n*m):
-    arr[x][y] = chr(ord('A') + i)
+    arr[x][y] = chr(ord('A') + i % ord('A'))
 
     nx, ny = x + dx[dir], y + dy[dir]
     if not inRange(nx, ny):
