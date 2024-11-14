@@ -5,7 +5,10 @@ cmd = input()
 dx = [-1, 0, 1, 0]
 dy = [0, 1, 0, -1]
 
-arr = [[i * 3 +j + 1 for j in range(N)] for i in range(N)]
+arr = [0] * (N+1)
+
+for i in range(N):
+    arr[i] = list(map(int, input().split()))
 
 def inRange(x1, y1):
     if x1 >= 0 and y1 >= 0 and x1 < N and y1 < N:
