@@ -13,11 +13,10 @@ def inRange(x1, y1):
 
 dir = 0
 x, y = 0, 0
+init = 'A'
 for i in range(0, n*m):
-    init = 'A'
-    
-
-    arr[x][y] = chr((init + i))
+    init += ord(init) + i
+    arr[x][y] = chr(init)
 
     nx, ny = x + dx[dir], y + dy[dir]
     if not inRange(nx, ny):
