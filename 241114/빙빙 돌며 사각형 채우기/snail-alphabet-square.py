@@ -14,9 +14,9 @@ def inRange(x1, y1):
 dir = 0
 x, y = 0, 0
 init = 'A'
+MAX = 'Z'
 for i in range(0, n*m):
-    init += ord(init) + i
-    arr[x][y] = chr(init)
+    arr[x][y] = init
 
     nx, ny = x + dx[dir], y + dy[dir]
     if not inRange(nx, ny):
@@ -24,7 +24,10 @@ for i in range(0, n*m):
     x, y = x + dx[dir], y + dy[dir]
 
     if init == 'Z':
-        init = 'A'
+            init = 'A'
+    else:
+        init = chr((ord(init) + 1))
+
 
 for i in range(n):
     for j in range(m):
