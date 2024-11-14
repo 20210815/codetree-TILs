@@ -14,12 +14,18 @@ def inRange(x1, y1):
 dir = 0
 x, y = 0, 0
 for i in range(0, n*m):
-    arr[x][y] = chr(ord('A') + i % ord('A'))
+    init = 'A'
+    
+
+    arr[x][y] = chr((init + i))
 
     nx, ny = x + dx[dir], y + dy[dir]
     if not inRange(nx, ny):
         dir = (dir + 1) % 4
     x, y = x + dx[dir], y + dy[dir]
+
+    if init == 'Z':
+        init = 'A'
 
 for i in range(n):
     for j in range(m):
