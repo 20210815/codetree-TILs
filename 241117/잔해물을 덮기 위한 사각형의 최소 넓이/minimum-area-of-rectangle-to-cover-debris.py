@@ -1,5 +1,5 @@
-OFFSET = 100
-MAX = 200
+OFFSET = 1000
+MAX = 2000
 
 def checkingList(x1, x2, y1, y2, k):
     global arr
