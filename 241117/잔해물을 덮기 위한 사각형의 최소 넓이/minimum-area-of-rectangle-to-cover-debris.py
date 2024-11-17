@@ -16,15 +16,20 @@ arr = [[0 for _ in range(MAX)] for _ in range(MAX)]
 checkingList(x1, x2, y1, y2, 1)
 checkingList(rx1, rx2, ry1, ry2, 2)
 
+
+check = False
 min_x, min_y = MAX, MAX
 max_x, max_y = 0, 0
 for i in range(MAX):
     if arr[i].count(1) >= 1:
         for j in range(MAX):
             if arr[i][j] == 1:
+                check = True
                 min_x = min(i, min_x)
                 min_y = min(j, min_y)
                 max_x = max(i,max_x)
                 max_y = max(j, max_y)
-
-print((max_x-min_x+1) * (max_y - min_y+1))
+if check:
+    print((max_x-min_x+1) * (max_y - min_y+1))
+else:
+    print(0)
