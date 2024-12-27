@@ -2,9 +2,14 @@ a = list(input())
 
 count = 0
 
-if len(a) == 1:
-    if a[0] == '1':
-        a[0] = 0
+#만약 1만 있다면
+if set(a) == {'1'}:
+    for index in range(len(a)-1, -1, -1):
+        if int(a[index]) == 1:
+            a[index] = '0'
+            count += 1
+        if count == 1:
+            break
 else:
     for index in range(len(a)):
         if int(a[index]) == 0 :
