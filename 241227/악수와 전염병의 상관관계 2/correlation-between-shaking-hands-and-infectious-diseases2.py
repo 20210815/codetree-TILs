@@ -31,7 +31,7 @@ for t, x, y in time:
         developer[y-1] = 1
         desease[y-1] = K
         desease[x-1] -= 1
-        continue()
+        continue
     #y가 감염자라면
     elif (developer[y-1] == 1 and desease[y-1] > 0):
         developer[x-1] = 1
