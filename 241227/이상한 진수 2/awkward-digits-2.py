@@ -8,13 +8,9 @@ for index in range(len(a)):
     if count == 1:
         break
 
-result = 2
-sqr = 2
+result = 0
 for index in range(len(a)):
     if int(a[index]) == 1:
-        for j in range(len(a)-index-1):
-            sqr*=2
-        result += sqr
-        sqr = 0
+        result += 2 ** (len(a)-index-1)
 
 print(result)
