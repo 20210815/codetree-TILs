@@ -28,15 +28,16 @@ for t, x, y in time:
 
     # x가 감염자라면 그리고 감염시키는 횟수도 남아있다면
     elif (developer[x-1] == 1 and desease[x-1] > 0):
-        developer[y-1] = 1
-        desease[y-1] = K
-        desease[x-1] -= 1
-        continue
+        if developer[y-1] != 1:
+            developer[y-1] = 1
+            desease[y-1] = K
+            desease[x-1] -= 1
     #y가 감염자라면
     elif (developer[y-1] == 1 and desease[y-1] > 0):
-        developer[x-1] = 1
-        desease[x-1] = K
-        desease[y-1] -= 1
+        if developer[y-1] != 1:
+            developer[x-1] = 1
+            desease[x-1] = K
+            desease[y-1] -= 1
 
 
 print(*developer, sep='')
