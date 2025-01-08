@@ -1,15 +1,14 @@
 N, K = map(int, input().split())
-arr = [0] * 100
+arr = [0] * 1000
 
 for _ in range(N):
     candy, pos = tuple(map(int, input().split()))
-    arr[pos] = candy
+    arr[pos] += candy
 
 s = 0
 result = 0
 for i in range(len(arr)-(K*2)):
-    for j in range(K*2+1):
-        s += arr[i+j]
+    s = sum(arr[i:i+(K*2)+1])
     if result < s:
         result = s
     s = 0
