@@ -4,7 +4,7 @@ arr = list(map(int, input().split()))
 s = 0
 result = 0
 # Write your code here!
-for i in range(n-k):
+for i in range(n-k+1):
     for j in range(k):
         s += arr[i+j]
     if result < s :
