@@ -1,12 +1,12 @@
 abilities = list(map(int, input().split()))
 
 # Write your code here!
-checkMember = [False] * len(abilities)
+checkMember = [False] * 6
 
 result = 1000000
-for i in range(len(abilities)):
-    for j in range(len(abilities)):
-        for k in range(len(abilities)):
+for i in range(6-2):
+    for j in range(i+1, 6-1):
+        for k in range(j+1, 6):
             checkMember[i] = True
             checkMember[j] = True
             checkMember[k] = True
@@ -23,6 +23,9 @@ for i in range(len(abilities)):
                 result = abs(teamSum - anotherTeam)
             anotherTeam = 0
             teamSum = 0
+            checkMember[i] = False
+            checkMember[j] = False
+            checkMember[k] = False
 
 # 가장 최소 찾기
 print(result)
