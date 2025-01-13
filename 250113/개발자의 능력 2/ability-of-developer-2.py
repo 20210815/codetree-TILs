@@ -22,7 +22,7 @@ for i in range(n):
         #두번째 팀원
         for k in range(n):
             for l in range(k+1, n):
-                if k == i or k == j or k == l or l == j:
+                if k == i or k == j or i == l or l == j:
                     continue
                 min_diff = min(min_diff, diff(i,j ,k, l))
 
