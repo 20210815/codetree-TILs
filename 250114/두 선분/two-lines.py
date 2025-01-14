@@ -1,7 +1,7 @@
 x1, x2, x3, x4 = map(int, input().split())
 
 # Write your code here!
-line = [0] * 100
+line = [0] * 100000
 
 
 for i in range(x1, x2+1):
